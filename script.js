@@ -30,7 +30,7 @@ const SECTIONS = [
     items: [
       { title: "CIBC", role: "SWE Intern (DevOps) · Spark Award nominee", date: "Sep 2026 — now", desc: ["Standardizing shared CI/CD for 9 payment services: 13 reusable actions, ~70% (estimate) less YAML/shell per service.", "Traced CI thrashing to Linux cgroups v2 memory pressure; fixed it with ephemeral OpenShift runners."] },
       { title: "ARVP", role: "Robotics Dev", date: "Sep 2025 — Aug 2026", desc: "Ported a 6-axis underwater robot's PID controller from Python to C++: 213.8 µs → 1.97 µs (~109× speedup).", link: "https://github.com/artur-bertash/pid_progress_repo" },
-      { title: "Monke", role: "Software Dev", date: "2024", desc: "Telegram crypto game MVP, 10K+ subscribers (1.6K now); async Python backend (aiogram, FastAPI, MySQL)." },
+      { title: "Monke", role: "Software Dev", date: "2024", desc: "Telegram crypto game MVP, 10K+ subscribers (1.6K now); async Python backend (aiogram, FastAPI, MySQL).", link: "https://t.me/monke_ton" },
     ],
   },
   {
