@@ -259,7 +259,9 @@ function submit(raw) {
   if (/^[/:]/.test(text)) return think(() => runCmd(text.slice(1), text[0]));
   // short inputs ("projects", "hire") navigate; real questions go to Claude
   const short = text.split(/\s+/).length <= 2;
-  if (short || !CHAT_API) return think(() => chat(text) || fallback());
+  if (!CHAT_API) return think(() => chat(text) || fallback());
+  // short inputs that match a section navigate; anything else goes to the AI
+  if (short) return think(() => chat(text) || askClaude(text));
   if (!chat(text, true)) askClaude(text);
 }
 
