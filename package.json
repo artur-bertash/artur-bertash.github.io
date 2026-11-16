@@ -1,0 +1,21 @@
+{
+  "name": "artur-bertash",
+  "description": "Terminal-style portfolio",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp -R index.html style.css script.js imgs dist/",
+    "dev": "npm run build && wrangler pages dev --port 8080",
+    "deploy": "npm run build && wrangler pages deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artur-bertash/artur-bertash.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/artur-bertash/artur-bertash.github.io/issues"
+  },
+  "homepage": "https://github.com/artur-bertash/artur-bertash.github.io#readme",
+  "devDependencies": {
+    "wrangler": "^4.163.0"
+  },
+  "private": true
+}
