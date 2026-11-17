@@ -1,3 +1,4 @@
+**Live:** https://artur-bertash.pages.dev
 
 ## “Experience”
 Grandmaster of Recursive Obfuscation at the Institute for Semantic Noise.  
